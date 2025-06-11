@@ -210,12 +210,4 @@ app.get('/health', (req, res) => {
     res.json({ status: 'OK', port: PORT });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-    console.log('Environment check:');
-    console.log('- OpenAI API Key:', process.env.OPENAI_API_KEY ? 'Present' : 'Missing');
-    console.log('- D-ID API Key:', process.env.DID_API_KEY ? 'Present' : 'Missing');
-    console.log('\nTest endpoints:');
-    console.log('- http://localhost:5000/api/test');
-    console.log('- http://localhost:5000/api/test-did');
-});
+module.exports = app;
