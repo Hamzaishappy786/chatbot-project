@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://https://vercel.com/hamzaishappy786s-projects/chatbot-project-69eq/api/$1"
+    }
+  ]
+}
